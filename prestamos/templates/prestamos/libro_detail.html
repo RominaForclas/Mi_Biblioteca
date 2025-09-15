@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>{{ libro.titulo }}</title></head>
+<body>
+  <h1>{{ libro.titulo }}</h1>
+  <p><strong>Autor:</strong> {{ libro.autor }}</p>
+  <p><strong>Estado:</strong> {% if libro.disponible %} ✅ Disponible {% else %} ❌ Prestado {% endif %}</p>
+  <p><a href="{% url 'prestamos:libro_list' %}">Volver al listado</a></p>
+</body>
+</html>

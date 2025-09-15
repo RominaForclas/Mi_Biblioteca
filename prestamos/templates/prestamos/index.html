@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Biblioteca</title></head>
+<body>
+  <h1>Bienvenid@ a la Biblioteca</h1>
+  <p>Total de libros: {{ total_libros }}</p>
+  <p>Libros disponibles: {{ disponibles }}</p>
+  <p><a href="{% url 'prestamos:libro_list' %}">Ver libros</a></p>
+  <p><a href="/admin/">Panel de administración</a></p>
+</body>
+</html>
