@@ -4,17 +4,11 @@
 <body>
   <h1>Listado de libros</h1>
   <ul>
-    {% for libro in libros %}
-      <li>
-        <a href="{% url 'prestamos:libro_detail' libro.pk %}">
-          {{ libro.titulo }}
-        </a> — {{ libro.autor }}
-        {% if libro.disponible %} ✅ Disponible {% else %} ❌ Prestado {% endif %}
-      </li>
-    {% empty %}
-      <li>No hay libros cargados.</li>
-    {% endfor %}
+    
+    
+    <li>No hay libros cargados.</li>
+    
   </ul>
-  <p><a href="{% url 'prestamos:index' %}">Inicio</a></p>
+  <p><a href="index.html">volver al home</a></p>
 </body>
 </html>
